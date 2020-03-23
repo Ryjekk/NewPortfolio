@@ -1,8 +1,8 @@
 <template>
   <div class="topbar">
     <div class="topbar__left">
-      <p>Marcin</p>
-      <p>Ryjewsky</p>
+      <p class="topbar__left__top">Marcin</p>
+      <p class="topbar__left__bottom">Ryjewsky</p>
     </div>
     <div class="topbar__right" v-if="showMenu">
       <a href="" class="topbar__right__item">About</a>
