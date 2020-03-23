@@ -1,0 +1,11 @@
+.home {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  height: calc(100% - 4rem);
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  overflow: scroll;
+  background-color: $color-primary;
+  border-radius: 1.5rem;
+}

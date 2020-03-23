@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
+}
+
+#app {
+  box-sizing: border-box;
+  font-family: 'Lato';
+  overflow: hidden;
+}
+
+.wrapper{ 
+  padding: 2rem;
+  background-color: black;
+  height: 100vh;
+  font-size: $font-text;
+}

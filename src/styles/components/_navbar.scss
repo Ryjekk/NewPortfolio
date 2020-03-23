@@ -1,0 +1,38 @@
+.bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  right: 4.5rem;
+  flex-direction: column;
+  height: calc(100% - 8rem);
+
+  &__item {
+    align-self: flex-end;
+    &__dropdown {
+      cursor: pointer;
+    }
+    &__wrap {
+      display: flex;
+      &__icon {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1.5rem; 
+      }
+    }
+    &__text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    box-sizing: border-box;
+    }
+  }
+}
+
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}

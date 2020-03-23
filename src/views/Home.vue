@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Navigation @showDropdown="passEvent" />
+    <TopBar :showMenu="showMenu" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Navigation from "../components/Navigation";
+import TopBar from "../components/TopBar";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    Navigation,
+    TopBar
+  },
+  data() {
+    return {
+      showMenu: false
+    };
+  },
+  methods: {
+    passEvent() {
+      this.showMenu = !this.showMenu;
+    }
   }
 };
 </script>
