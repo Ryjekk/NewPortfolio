@@ -1,0 +1,61 @@
+// Main wrapper
+.wrapper {
+  font-size: $size-text;
+}
+
+// Top nav
+.topbar {
+  &__left {
+    &__top {
+      letter-spacing: .84rem;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+     &__bottom {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+    }
+  }
+  &__right {
+    &__item {
+      font-weight: 100;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Nav bar
+.bar {
+  &__item {
+    &__text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.2rem;
+    font-weight: 100;
+    }
+  }
+}
+
+// Button 
+.btn {
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+// TextBox
+.holder {
+  &__hedding {
+    font-size: $size-hedding;
+    font-weight: 400;
+  }
+  &__content {
+    font-size: $size-text;
+    font-weight: 200;
+    line-height: 150%;
+  }
+}

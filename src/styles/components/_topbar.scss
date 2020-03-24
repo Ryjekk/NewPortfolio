@@ -4,25 +4,11 @@
   align-items: center;
   margin-right: 5rem;
   padding-left: 1rem;
-  &__left {
-    &__top {
-      letter-spacing: .84rem;
-      font-weight: 200;
-      text-transform: uppercase;
-    }
-     &__bottom {
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: .3rem;
-    }
-  }
+  
   &__right {
     &__item {
       padding-right: 1.5rem;
       opacity: .7;
-      font-weight: 100;
-      font-size: 1.3rem;
-      text-transform: uppercase;
     }
   }
 }

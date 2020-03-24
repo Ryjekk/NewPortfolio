@@ -17,6 +17,17 @@ html {
   font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
 }
 
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+    &:focus, &:active{
+      outline: none;
+    }
+}
+
 #app {
   box-sizing: border-box;
   font-family: 'Lato';
@@ -27,5 +38,8 @@ html {
   padding: 2rem;
   background-color: black;
   height: 100vh;
-  font-size: $font-text;
+}
+  
+::-webkit-scrollbar {
+  width: 0px;
 }

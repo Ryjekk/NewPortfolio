@@ -1,0 +1,25 @@
+.btn {
+  background-color: $color-black;
+  width: 15rem;
+  height: 5rem;
+  border-radius: .7rem;
+  box-shadow: 0 .3rem 1rem $color-black-light;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1.5rem $color-black-light;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem $color-black-light;
+  }
+}
