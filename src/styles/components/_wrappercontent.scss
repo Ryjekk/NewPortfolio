@@ -1,0 +1,32 @@
+.content__out {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 11rem);
+}
+
+.content__in {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 770px) {
+  .content__in {
+    flex-direction: column-reverse;
+    margin: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .content__in {
+    margin: 0rem;
+    margin-top: -5rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .content__in{
+    width: 75%;
+  }
+}

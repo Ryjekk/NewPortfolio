@@ -26,6 +26,16 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .topbar {
+  &__right {
+    &__item {
+      font-size: 1.8rem;
+    }
+  }
+}
+}
+
 // Nav bar
 .bar {
   &__item {
@@ -47,6 +57,13 @@
   font-size: 1.3rem;
 }
 
+@media only screen and (max-width: 535px) {
+  .btn {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
+}
+
 // TextBox
 .holder {
   &__hedding {
@@ -57,5 +74,26 @@
     font-size: $size-text;
     font-weight: 200;
     line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .holder {
+    &__hedding {
+      font-size: 2rem;
+    }
+    &__content {
+      font-size: 1.4rem;
+    }
+  }
+}
+@media only screen and (max-width: 940px) {
+  .holder {
+    &__hedding {
+      font-size: 1.8rem;
+    }
+    &__content {
+      font-size: 1.3rem;
+    }
   }
 }

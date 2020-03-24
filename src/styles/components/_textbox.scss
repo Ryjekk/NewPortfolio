@@ -1,8 +1,60 @@
 .holder {
   max-width: 45rem;
-  max-height: 30rem;
+  margin-left: 5rem;
 
   &__content {
     padding: 1.3rem 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .holder{
+    margin-left: 15rem;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .holder{
+    max-width: 40rem;
+     &__content {
+      padding: .7rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .holder{
+    max-width: 30rem;
+    margin-left: 2rem;
+     &__content {
+      padding: .7rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+   .holder{
+    max-width: 40rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .holder{
+    max-width: 30rem;
+    margin-left: 0;
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .holder{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 483px) {
+  .content__in{
+    max-width: auto;
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="btn__wrapper">
     <button class="btn">{{ text }}Click me</button>
   </div>
 </template>

@@ -32,3 +32,13 @@
   flex-direction: column;
   align-self: center;
 }
+
+@media only screen and (max-width: 425px) {
+ .bar{
+    right: 2.5rem;
+    height: 95%;
+  }
+  .bar__item__wrap__icon {
+    width: 3rem;
+  }
+}
