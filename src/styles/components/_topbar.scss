@@ -1,9 +1,21 @@
 .topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 10;
   margin-right: 5rem;
-  padding-left: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: $color-primary;
+  padding-top: 2rem;
+  
+  &__wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  &__left {
+  }
   
   &__right {
     &__item {

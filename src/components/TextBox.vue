@@ -15,7 +15,7 @@
     <p class="holder__content">
       {{ content3 }}
     </p>
-    <Button :text="text" :btn_link="btn_link" />
+    <Button :text="text" :btn_link="btn_link" :btn_show="btn_show" />
   </div>
 </template>
 
@@ -55,6 +55,9 @@ export default {
     btn_link: {
       type: String,
       required: true
+    },
+    btn_show: {
+      type: Boolean
     }
   }
 };

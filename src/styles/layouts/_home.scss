@@ -4,7 +4,7 @@
   left: 2rem;
   height: calc(100% - 4rem);
   width: calc(100% - 4rem);
-  padding: 2rem;
+  padding: 0 2rem;
   overflow: scroll;
   background-color: $color-primary;
   border-radius: 1.5rem;
@@ -16,7 +16,6 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 2rem;
     border-radius: 0;
   }
 }

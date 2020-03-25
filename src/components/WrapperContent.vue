@@ -9,6 +9,7 @@
         :content3="content3"
         :text="text"
         :btn_link="btn_link"
+        :btn_show="btn_show"
       />
       <Picture />
     </div>
@@ -53,6 +54,9 @@ export default {
     btn_link: {
       type: String,
       required: true
+    },
+    btn_show: {
+      type: Boolean
     }
   }
 };
