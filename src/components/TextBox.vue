@@ -15,7 +15,7 @@
     <p class="holder__content">
       {{ content3 }}
     </p>
-    <Button />
+    <Button :text="text" :btn_link="btn_link" />
   </div>
 </template>
 
@@ -47,6 +47,14 @@ export default {
     content3: {
       type: String,
       default: null
+    },
+    text: {
+      type: String,
+      default: null
+    },
+    btn_link: {
+      type: String,
+      required: true
     }
   }
 };

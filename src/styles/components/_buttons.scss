@@ -6,6 +6,7 @@
   box-shadow: 0 .3rem 1rem $color-black-light;
   transition: all .2s;
   cursor: pointer;
+  display: block;
 
   &:hover{
     transform: translateY(-3px);
@@ -26,6 +27,7 @@
 
 .btn__wrapper {
   padding-top: 1rem;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 535px) {

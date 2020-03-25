@@ -1,12 +1,26 @@
 <template>
   <div class="btn__wrapper">
-    <button class="btn">{{ text }}Click me</button>
+    <a :href="btn_link">
+      <button type="button" class="btn">
+        {{ text }}
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Button"
+  name: "Button",
+  props: {
+    text: {
+      type: String,
+      required: true
+    },
+    btn_link: {
+      type: String,
+      required: true
+    }
+  }
 };
 </script>
 
