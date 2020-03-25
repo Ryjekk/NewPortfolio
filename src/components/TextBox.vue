@@ -1,14 +1,10 @@
 <template>
   <div class="holder">
-    <h2 class="holder__hedding">
-      {{ hedding1 }}
-    </h2>
+    <h2 class="holder__hedding" v-html="hedding1"></h2>
     <h2 class="holder__hedding">
       {{ hedding2 }}
     </h2>
-    <p class="holder__content">
-      {{ content1 }}
-    </p>
+    <p class="holder__content" v-html="content1"></p>
     <p class="holder__content">
       {{ content2 }}
     </p>
@@ -29,32 +25,25 @@ export default {
   },
   props: {
     hedding1: {
-      type: String,
-      default: null
+      type: String
     },
     hedding2: {
-      type: String,
-      default: null
+      type: String
     },
     content1: {
-      type: String,
-      default: null
+      type: String
     },
     content2: {
-      type: String,
-      default: null
+      type: String
     },
     content3: {
-      type: String,
-      default: null
+      type: String
     },
     text: {
-      type: String,
-      default: null
+      type: String
     },
     btn_link: {
-      type: String,
-      required: true
+      type: String
     },
     btn_show: {
       type: Boolean

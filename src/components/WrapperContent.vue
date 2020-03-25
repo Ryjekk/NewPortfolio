@@ -11,7 +11,12 @@
         :btn_link="btn_link"
         :btn_show="btn_show"
       />
-      <Picture />
+      <Picture
+        v-show="pic_show"
+        :elipse__background="elipse__background"
+        :pic_show="pic_show"
+      />
+      <SkillGallery v-show="skill_show" />
     </div>
   </div>
 </template>
@@ -19,44 +24,48 @@
 <script>
 import Picture from "../components/Picture";
 import TextBox from "../components/TextBox";
+import SkillGallery from "../components/SkillGallery";
 
 export default {
   name: "WrapperContent",
   components: {
     Picture,
-    TextBox
+    TextBox,
+    SkillGallery
   },
   props: {
     hedding1: {
-      type: String,
-      default: null
+      type: String
     },
     hedding2: {
-      type: String,
-      default: null
+      type: String
     },
     content1: {
-      type: String,
-      default: null
+      type: String
     },
     content2: {
-      type: String,
-      default: null
+      type: String
     },
     content3: {
-      type: String,
-      default: null
+      type: String
     },
     text: {
-      type: String,
-      default: null
+      type: String
     },
     btn_link: {
-      type: String,
-      required: true
+      type: String
     },
     btn_show: {
       type: Boolean
+    },
+    pic_show: {
+      type: Boolean
+    },
+    skill_show: {
+      type: Boolean
+    },
+    elipse__background: {
+      type: Object
     }
   }
 };

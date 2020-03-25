@@ -14,11 +14,11 @@ export default {
   props: {
     text: {
       type: String,
-      required: true
+      required: false
     },
     btn_link: {
       type: String,
-      required: true
+      required: false
     },
     btn_show: {
       type: Boolean

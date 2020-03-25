@@ -1,38 +1,34 @@
 <template>
   <div class="bar">
     <span class="bar__item bar__item__dropdown" @click="toggleMenu">
-      <img
-        src="../assets/ico/burger.svg"
-        class="bar__item__wrap__icon"
-        alt="Dark mode"
-      />
+      <svg class="bar__item__wrap__icon">
+        <use xlink:href="../assets/ico/sprite.svg#burger"></use>
+      </svg>
     </span>
     <div class="bar__item">
       <a href="" class="bar__item__wrap">
-        <img
-          src="../assets/ico/github.svg"
-          class="bar__item__wrap__icon"
-          alt="Github icon"
-        />
+        <svg class="bar__item__wrap__icon">
+          <use xlink:href="../assets/ico/sprite.svg#github"></use>
+        </svg>
       </a>
       <a href="" class="bar__item__wrap">
-        <img
-          src="../assets/ico/mail.svg"
-          class="bar__item__wrap__icon"
-          alt="Mail icon"
-        />
+        <svg class="bar__item__wrap__icon">
+          <use xlink:href="../assets/ico/sprite.svg#mail"></use>
+        </svg>
       </a>
       <a href="" class="bar__item__wrap">
-        <img
-          src="../assets/ico/instagram.svg"
-          class="bar__item__wrap__icon"
-          alt="Instagram Icon"
-        />
+        <svg class="bar__item__wrap__icon">
+          <use xlink:href="../assets/ico/sprite.svg#instagram"></use>
+        </svg>
       </a>
     </div>
     <div class="bar__item text__wrapper">
       <p class="bar__item__text">DOWN</p>
       <img src="../assets/ico/arrow.svg" class="bar__item__wrap" alt="Arrow" />
+      <!-- TODO FIX ARROW SIZE -->
+      <!-- <svg class="bar__item__wrap">
+        <use xlink:href="../assets/ico/sprite.svg#arrow"></use>
+      </svg> -->
     </div>
   </div>
 </template>
