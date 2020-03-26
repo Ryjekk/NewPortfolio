@@ -1,38 +1,38 @@
 <template>
-  <div class="pic__wrapper">
+  <div class="skill__wrapper">
     <!-- <img src="../assets/skills/tail.svg" alt="me" class="picture__profile" /> -->
-    <div>
-      <svg class="">
+    <div class="skill__frame">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#css3"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#html5"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#sass"></use>
       </svg>
     </div>
 
-    <div>
-      <svg class="">
+    <div class="skill__frame">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#github"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item icon_js">
         <use xlink:href="../assets/skills/sprite.svg#javascript"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#jquery"></use>
       </svg>
     </div>
 
-    <div>
-      <svg class="">
+    <div class="skill__frame">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#vue"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item icon_nuxt">
         <use xlink:href="../assets/skills/sprite.svg#nuxt"></use>
       </svg>
-      <svg class="">
+      <svg class="skill__frame__item icon_tailwind">
         <use xlink:href="../assets/skills/sprite.svg#tailwind"></use>
       </svg>
     </div>
