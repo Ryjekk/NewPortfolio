@@ -17,6 +17,13 @@
   margin-top: -5rem;
 }
 
+@media only screen and (max-width: 1990px) {
+  .pic__wrapper {
+    right: 28%;
+    transform: translate(28%);
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .pic__wrapper{
     right: 25%;
