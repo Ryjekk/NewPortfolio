@@ -12,11 +12,12 @@
         :btn_show="btn_show"
       />
       <Picture
-        v-show="pic_show"
+        v-if="pic_show"
         :elipse__background="elipse__background"
         :pic_show="pic_show"
       />
-      <SkillGallery v-show="skill_show" />
+      <SkillGallery v-if="skill_show" />
+      <ContactGallery v-if="contact_show" />
     </div>
   </div>
 </template>
@@ -25,13 +26,15 @@
 import Picture from "../components/Picture";
 import TextBox from "../components/TextBox";
 import SkillGallery from "../components/SkillGallery";
+import ContactGallery from "../components/ContactGallery";
 
 export default {
   name: "WrapperContent",
   components: {
     Picture,
     TextBox,
-    SkillGallery
+    SkillGallery,
+    ContactGallery
   },
   props: {
     hedding1: {
@@ -66,6 +69,9 @@ export default {
     },
     elipse__background: {
       type: Object
+    },
+    contact_show: {
+      type: Boolean
     }
   }
 };

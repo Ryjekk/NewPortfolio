@@ -1,0 +1,38 @@
+.contact__frame__item {
+  height: 30rem;
+  margin: 2rem;
+}
+
+.contact__frame {
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+}
+.contact__frame__duo {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1510px) {
+  .contact__frame__item {
+    height: 25rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .contact__frame {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .contact__frame__duo {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+ .contact__frame__duo {
+   display: none;
+ }
+}

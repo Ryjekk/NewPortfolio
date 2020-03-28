@@ -1,5 +1,5 @@
 <template>
-  <div class="btn__wrapper" v-show="btn_show">
+  <div class="btn__wrapper" v-if="btn_show">
     <a :href="btn_link">
       <button type="button" class="btn">
         {{ text }}

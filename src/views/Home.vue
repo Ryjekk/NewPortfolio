@@ -35,6 +35,17 @@
       :content1="skillContent.content1"
       :skill_show="skillContent.skill_show"
     />
+    <!-- CONTACT -->
+    <WrapperContent
+      v-for="contactContent in content.contact"
+      :key="contactContent.id"
+      :hedding1="contactContent.hedding1"
+      :content2="contactContent.content2"
+      :text="contactContent.text"
+      :btn_link="contactContent.btn_link"
+      :btn_show="contactContent.btn_show"
+      :contact_show="contactContent.contact_show"
+    />
   </div>
 </template>
 
@@ -93,6 +104,17 @@ export default {
             hedding1: "My skills",
             content1: `During my adventure with programiming I was able to finish chapters of "Responsive Web Design" and "Javascript Algorithms And Data Structures" on <strong>FreeCodeCamp</strong>, like also "Practical JavaScript" on <strong>Watch and Code</strong> and <strong>CodeCademy</strong>, beside I've taken a number of online courses such as <strong>The Complete Javascript Course, Advanced CSS & Sass, Javascript 30, Vue, Vuetify & Nuxt</strong>. Currently I'm taking PHP for Beginners and Laravel 6.`,
             skill_show: true
+          }
+        ],
+        contact: [
+          {
+            hedding1: "Slide into my DM's",
+            content2:
+              "Feel free to reach out if you're looking for a developer, have a question, or just want to say “hi” :)",
+            text: "Contact",
+            btn_link: "mailto:ryjewski@gmail.com?Subject=Hello%20Marcin",
+            btn_show: true,
+            contact_show: true
           }
         ]
       }
