@@ -17,6 +17,7 @@
         :pic_show="pic_show"
       />
       <SkillGallery v-if="skill_show" />
+      <ProjectGallery v-if="project_show" />
       <ContactGallery v-if="contact_show" />
     </div>
   </div>
@@ -27,6 +28,7 @@ import Picture from "../components/Picture";
 import TextBox from "../components/TextBox";
 import SkillGallery from "../components/SkillGallery";
 import ContactGallery from "../components/ContactGallery";
+import ProjectGallery from "../components/ProjectGallery";
 
 export default {
   name: "WrapperContent",
@@ -34,7 +36,8 @@ export default {
     Picture,
     TextBox,
     SkillGallery,
-    ContactGallery
+    ContactGallery,
+    ProjectGallery
   },
   props: {
     hedding1: {
@@ -72,9 +75,10 @@ export default {
     },
     contact_show: {
       type: Boolean
+    },
+    project_show: {
+      type: Boolean
     }
   }
 };
 </script>
-
-<style></style>
