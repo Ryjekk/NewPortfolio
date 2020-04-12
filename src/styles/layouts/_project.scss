@@ -1,0 +1,149 @@
+.project__wraper {
+  padding: 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &__top,
+  &__middle {
+    margin-bottom: 15rem;
+  }
+}
+// TOP
+.top__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+
+  &__left {
+  max-width: 45rem;
+  }
+
+}
+
+.list__heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+.list__el {
+  list-style: none;
+}
+
+.list__box {
+  display: flex;
+}
+
+.list__wrapper {
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 1172px) {
+  .top__wrapper {
+    padding: 0 7%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .top__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__wrapper__left {
+    max-width: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+
+// MID
+.middle__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 15rem;
+}
+
+.middle__wrapper__buttons {
+  margin-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project_button {
+  padding-bottom: 2rem;
+}
+
+.project_pic {
+  width: 120rem;
+}
+
+@media only screen and (max-width: 1645px) {
+  .project_pic {
+    width: 100rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .project_pic {
+    width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+ .project_pic {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .middle__wrapper__buttons{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+ .project_pic {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+ .project_pic {
+    display: none;
+  }
+  .project__wraper__middle,
+  .project__wraper__top {
+    margin-bottom: 2rem;
+
+  }
+}
+// BOT
+.bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+
+.bottom__wrapper__content {
+  max-width: 45rem;
+
+}
+
+@media only screen and (max-width: 1510px) {
+  .bottom__wrapper__content {
+    max-width: 40rem;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .bottom__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom__wrapper__content {
+    max-width: auto;
+  }
+}

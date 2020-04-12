@@ -10,7 +10,7 @@
         <a href="" class="topbar__right__item">Skills</a>
         <a href="" class="topbar__right__item">Projects</a>
         <a href="" class="topbar__right__item">Contact</a>
-        <a href="" class="topbar__right__item">Dark Mode</a>
+        <!-- <a href="" class="topbar__right__item">Dark Mode</a> -->
       </div>
     </div>
   </div>

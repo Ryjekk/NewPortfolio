@@ -6,17 +6,28 @@
       </svg>
     </span>
     <div class="bar__item">
-      <a href="" class="bar__item__wrap">
+      <a
+        href="https://github.com/Ryjekk"
+        target="_blank"
+        class="bar__item__wrap"
+      >
         <svg class="bar__item__wrap__icon">
           <use xlink:href="../assets/ico/sprite.svg#github"></use>
         </svg>
       </a>
-      <a href="" class="bar__item__wrap">
+      <a
+        href="mailto:ryjewski@gmail.com?Subject=Hello%20Marcin"
+        class="bar__item__wrap"
+      >
         <svg class="bar__item__wrap__icon">
           <use xlink:href="../assets/ico/sprite.svg#mail"></use>
         </svg>
       </a>
-      <a href="" class="bar__item__wrap">
+      <a
+        href="https://www.instagram.com/gitnuk_/"
+        target="_blank"
+        class="bar__item__wrap"
+      >
         <svg class="bar__item__wrap__icon">
           <use xlink:href="../assets/ico/sprite.svg#instagram"></use>
         </svg>
