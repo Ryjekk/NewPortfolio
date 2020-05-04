@@ -56,6 +56,8 @@ export default {
       this.choseImage < 4
         ? (this.choseImage = this.choseImage + 1)
         : (this.choseImage = 0);
+
+      this.$emit("getImgId", this.choseImage);
     },
     previousImage() {
       if (this.choseImage > 0) {
@@ -63,6 +65,8 @@ export default {
       } else {
         this.choseImage = 4;
       }
+
+      this.$emit("getImgId", this.choseImage);
     }
   }
 };

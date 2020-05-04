@@ -1,6 +1,6 @@
 <template>
   <div id="slides">
-    <div class="slideImage" :style="setBackgroundImage"></div>
+    <div class="slideImage" :id="image.id" :style="setBackgroundImage"></div>
   </div>
 </template>
 

@@ -4,6 +4,7 @@
     <TopBar :showMenu="showMenu" />
     <!-- HOME -->
     <WrapperContent
+      id="main"
       v-for="homeContent in content.home"
       :key="homeContent.id"
       :hedding1="homeContent.hedding1"
@@ -19,6 +20,7 @@
     />
     <!-- ABOUT -->
     <WrapperContent
+      id="about"
       v-for="aboutContent in content.about"
       :key="aboutContent.id"
       :hedding1="aboutContent.hedding1"
@@ -29,6 +31,7 @@
     />
     <!-- SKILLS -->
     <WrapperContent
+      id="skills"
       v-for="skillContent in content.skill"
       :key="skillContent.id"
       :hedding1="skillContent.hedding1"
@@ -37,17 +40,20 @@
     />
     <!-- PROJECTS -->
     <WrapperContent
+      id="projects"
       v-for="projectContent in content.project"
       :key="projectContent.id"
       :hedding1="projectContent.hedding1"
       :content2="projectContent.content2"
       :text="projectContent.text"
-      :btn_link="projectContent.btn_link"
+      :btn_link="projectLink"
       :btn_show="projectContent.btn_show"
       :project_show="projectContent.project_show"
+      @passImageId="passImageId"
     />
     <!-- CONTACT -->
     <WrapperContent
+      id="contact"
       v-for="contactContent in content.contact"
       :key="contactContent.id"
       :hedding1="contactContent.hedding1"
@@ -75,6 +81,7 @@ export default {
   data() {
     return {
       showMenu: false,
+      projectLink: "/project",
       content: {
         home: [
           {
@@ -113,7 +120,7 @@ export default {
         skill: [
           {
             hedding1: "My skills",
-            content1: `During my adventure with programiming I was able to finish chapters of "Responsive Web Design" and "Javascript Algorithms And Data Structures" on <strong>FreeCodeCamp</strong>, like also "Practical JavaScript" on <strong>Watch and Code</strong> and <strong>CodeCademy</strong>, beside I've taken a number of online courses such as <strong>The Complete Javascript Course, Advanced CSS & Sass, Javascript 30, Vue, Vuetify & Nuxt</strong>. Currently I'm taking PHP for Beginners and Laravel 6.`,
+            content1: `During my adventure with programiming I was able to finish chapters of "Responsive Web Design" and "Javascript Algorithms And Data Structures" on <strong>FreeCodeCamp</strong>, like also "Practical JavaScript" on <strong>Watch and Code</strong> and <strong>CodeCademy</strong>, beside I've taken a number of online courses such as <strong>The Complete Javascript Course, Advanced CSS & Sass, Javascript 30, Vue, Vuetify & Nuxt</strong>. Currently I'm taking React - The Complete Guide`,
             skill_show: true
           }
         ],
@@ -123,7 +130,6 @@ export default {
             content2:
               "I like to keep myself busy improving my programming skills, and learing about new features. You can take a brief look at my projects below.",
             text: "View project",
-            btn_link: "/project",
             btn_show: true,
             project_show: true
           }
@@ -145,6 +151,19 @@ export default {
   methods: {
     passEvent() {
       this.showMenu = !this.showMenu;
+    },
+    passImageId(id) {
+      if (id === 1) {
+        return (this.projectLink = "/projectCareerToGo");
+      } else if (id === 2) {
+        return (this.projectLink = "/projectWeather");
+      } else if (id === 3) {
+        return (this.projectLink = "/projectTattoo");
+      } else if (id === 4) {
+        return (this.projectLink = "/projectStokkur");
+      } else {
+        return (this.projectLink = "/project");
+      }
     }
   }
 };

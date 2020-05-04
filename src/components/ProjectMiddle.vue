@@ -2,13 +2,13 @@
   <div class="middle__wrapper">
     <div class="middle__wrapper__buttons">
       <Button
-        :text="text"
+        text="Check Code"
         :btn_link="btn_link"
         :btn_show="true"
         class="project_button"
       />
       <Button
-        :text="text2"
+        text="Check Live"
         :btn_link="btn_link2"
         :btn_show="true"
         class="project_button"

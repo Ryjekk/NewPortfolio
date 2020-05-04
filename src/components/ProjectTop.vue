@@ -15,7 +15,7 @@
             Type
           </h6>
           <ul class="list">
-            <li class="list__el holder__content">{{ info_element }}</li>
+            <li class="list__el holder__content">{{ info_element_type }}</li>
           </ul>
         </div>
         <div class="list__wrapper">
@@ -23,7 +23,13 @@
             Stack
           </h6>
           <ul class="list">
-            <li class="list__el holder__content">{{ info_element }}</li>
+            <li
+              v-for="el in info_element_stack"
+              :key="el.id"
+              class="list__el holder__content"
+            >
+              {{ el }}
+            </li>
           </ul>
         </div>
         <div class="list__wrapper">
@@ -31,7 +37,10 @@
             Code
           </h6>
           <ul class="list">
-            <li class="list__el holder__content">{{ info_element }}</li>
+            <li
+              class="list__el holder__content"
+              v-html="info_element_code"
+            ></li>
           </ul>
         </div>
         <div class="list__wrapper">
@@ -39,7 +48,10 @@
             Live
           </h6>
           <ul class="list">
-            <li class="list__el holder__content">{{ info_element }}</li>
+            <li
+              class="list__el holder__content"
+              v-html="info_element_live"
+            ></li>
           </ul>
         </div>
       </div>
@@ -57,7 +69,16 @@ export default {
     content1: {
       type: String
     },
-    info_element: {
+    info_element_type: {
+      type: String
+    },
+    info_element_live: {
+      type: String
+    },
+    info_element_stack: {
+      type: Array
+    },
+    info_element_code: {
       type: String
     }
   }

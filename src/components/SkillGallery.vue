@@ -14,14 +14,14 @@
     </div>
 
     <div class="skill__frame">
+      <svg class="skill__frame__item icon_tailwind">
+        <use xlink:href="../assets/skills/sprite.svg#tailwind"></use>
+      </svg>
       <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#github"></use>
       </svg>
       <svg class="skill__frame__item icon_js">
         <use xlink:href="../assets/skills/sprite.svg#javascript"></use>
-      </svg>
-      <svg class="skill__frame__item">
-        <use xlink:href="../assets/skills/sprite.svg#jquery"></use>
       </svg>
     </div>
 
@@ -32,9 +32,9 @@
       <svg class="skill__frame__item icon_nuxt">
         <use xlink:href="../assets/skills/sprite.svg#nuxt"></use>
       </svg>
-      <svg class="skill__frame__item icon_tailwind">
-        <use xlink:href="../assets/skills/sprite.svg#tailwind"></use>
-      </svg>
+      <!-- <svg class="skill__frame__item">
+        <use xlink:href="../assets/skills/sprite.svg#react"></use>
+      </svg> -->
     </div>
   </div>
 </template>

@@ -7,7 +7,6 @@
   padding-top: 2rem;
   
   &__wrapper{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +14,17 @@
   }
 
   &__left {
+    cursor: pointer;
   }
   
   &__right {
     &__item {
       padding-right: 1.5rem;
       opacity: .7;
+
+      &:hover {
+        font-weight: 400;
+      }
     }
   }
 }

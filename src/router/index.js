@@ -2,6 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Project from "../views/Project.vue";
+import ProjectCareerToGo from "../views/ProjectCareerToGo.vue";
+import ProjectWeather from "../views/ProjectWeather.vue";
+import ProjectTattoo from "../views/ProjectTattoo.vue";
+import ProjectStokkur from "../views/ProjectStokkur.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +19,26 @@ const routes = [
     path: "/project",
     name: "Project",
     component: Project
+  },
+  {
+    path: "/projectCareerToGo",
+    name: "ProjectCareerToGo",
+    component: ProjectCareerToGo
+  },
+  {
+    path: "/projectWeather",
+    name: "ProjectWeather",
+    component: ProjectWeather
+  },
+  {
+    path: "/projectTattoo",
+    name: "ProjectTattoo",
+    component: ProjectTattoo
+  },
+  {
+    path: "/projectStokkur",
+    name: "ProjectStokkur",
+    component: ProjectStokkur
   }
 ];
 

@@ -17,7 +17,7 @@
         :pic_show="pic_show"
       />
       <SkillGallery v-if="skill_show" />
-      <ProjectGallery v-if="project_show" />
+      <ProjectGallery v-if="project_show" @getImgId="getImgId" />
       <ContactGallery v-if="contact_show" />
     </div>
   </div>
@@ -78,6 +78,11 @@ export default {
     },
     project_show: {
       type: Boolean
+    }
+  },
+  methods: {
+    getImgId(id) {
+      this.$emit("passImageId", id);
     }
   }
 };
