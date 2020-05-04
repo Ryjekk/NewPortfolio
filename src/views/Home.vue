@@ -71,6 +71,8 @@ import Navigation from "../components/Navigation";
 import TopBar from "../components/TopBar";
 import WrapperContent from "../components/WrapperContent";
 
+import { gsap } from "gsap";
+
 export default {
   name: "Home",
   components: {
@@ -85,7 +87,7 @@ export default {
       content: {
         home: [
           {
-            hedding1: "Hello I'm <strong>Inuk</strong>",
+            hedding1: "Hello I'm <span class='inuk'>Inuk</span>",
             hedding2: "Front End Developer",
             content1:
               "I've worked alongside senior designers and developers who have raised my standards for whats expected of any web application.",
@@ -165,6 +167,13 @@ export default {
         return (this.projectLink = "/project");
       }
     }
+  },
+  mounted() {
+    gsap.to(".inuk", {
+      fontWeight: "bold",
+      color: "rgb(204, 110, 110)",
+      duration: 2
+    });
   }
 };
 </script>

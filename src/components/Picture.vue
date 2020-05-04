@@ -6,6 +6,8 @@
 </template>
 
 <script>
+// import { gsap } from "gsap";
+
 export default {
   name: "Picture",
   props: {
@@ -13,5 +15,19 @@ export default {
       type: Object
     }
   }
+  // mounted() {
+  //   gsap.fromTo(
+  //     "img",
+  //     {
+  //       opacity: 0,
+  //       y: 30
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 2
+  //     }
+  //   );
+  // }
 };
 </script>

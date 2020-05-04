@@ -32,9 +32,9 @@
       <svg class="skill__frame__item icon_nuxt">
         <use xlink:href="../assets/skills/sprite.svg#nuxt"></use>
       </svg>
-      <!-- <svg class="skill__frame__item">
+      <svg class="skill__frame__item">
         <use xlink:href="../assets/skills/sprite.svg#react"></use>
-      </svg> -->
+      </svg>
     </div>
   </div>
 </template>
