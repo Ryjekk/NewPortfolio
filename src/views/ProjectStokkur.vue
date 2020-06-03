@@ -50,7 +50,7 @@ export default {
               '<a href="mailto:ryjewski@gmail.com?Subject=Hello%20STOKKwiev"><strong>Email for Beta Access</strong></a>',
             info_element_stack: ["HTML", "CSS", "Netlify", "JavaScript"],
             // MID
-            project_img: require("../assets/project/pic4.png"),
+            project_img: require("../assets/project/pic5.png"),
             btn_link: "mailto:ryjewski@gmail.com?Subject=Hello%20STOKKwiev",
             btn_link2: "mailto:ryjewski@gmail.com?Subject=Hello%20STOKKwiev",
             // BOT

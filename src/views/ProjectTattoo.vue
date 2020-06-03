@@ -51,7 +51,7 @@ export default {
               '<a href="https://kreskianny.netlify.app/"><strong>View website</strong></a>',
             info_element_stack: ["HTML", "CSS", "Netlify", "Firebase"],
             // MID
-            project_img: require("../assets/project/pic3.png"),
+            project_img: require("../assets/project/pic4.png"),
             btn_link: "https://github.com/Ryjekk/Form-Tattoo",
             btn_link2: "https://kreskianny.netlify.app/",
             // BOT

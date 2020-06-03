@@ -6,6 +6,7 @@ import ProjectCareerToGo from "../views/ProjectCareerToGo.vue";
 import ProjectWeather from "../views/ProjectWeather.vue";
 import ProjectTattoo from "../views/ProjectTattoo.vue";
 import ProjectStokkur from "../views/ProjectStokkur.vue";
+import ProjectAlgo from "../views/ProjectAlgo";
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/projectStokkur",
     name: "ProjectStokkur",
     component: ProjectStokkur
+  },
+  {
+    path: "/projectAlgo",
+    name: "ProjectAlgo",
+    component: ProjectAlgo
   }
 ];
 

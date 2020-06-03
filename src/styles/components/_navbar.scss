@@ -44,3 +44,9 @@
     width: 3rem;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .bar__item__dropdown {
+    visibility: hidden;
+  }
+}

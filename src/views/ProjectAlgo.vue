@@ -28,7 +28,7 @@ import TopBar from "../components/TopBar";
 import ProjectWrapper from "../components/ProjectWrapper";
 
 export default {
-  name: "Project",
+  name: "ProjectAlgo",
   components: {
     Navigation,
     TopBar,
@@ -41,32 +41,26 @@ export default {
         content: [
           {
             // TOP
-            hedding1: "My piervious portfolio",
+            hedding1: "Sort Algorithms",
             content1:
-              "My piervious portfolia is a project I put together after learing Sass. This webiste was the perfect way to improve my understanding of implementing structured CSS code.",
+              "Project Sort Algorithms is nice way to visualize basics sort algorithms",
             info_element_type: "Personal",
             info_element_code:
-              '<a href="https://github.com/Ryjekk/Inuk-Website"><strong>Repository</strong></a>',
+              '<a href="https://github.com/Ryjekk/Sort_algorytms"><strong>Repository</strong></a>',
             info_element_live:
-              '<a href="https://inuk.netlify.app/"><strong>View website</strong></a>',
-            info_element_stack: [
-              "HTML",
-              "CSS",
-              "Sass",
-              "Netlify",
-              "JavaScript"
-            ],
+              '<a href="https://inuk.netlify.app/"><strong>View website TO DO !!!</strong></a>',
+            info_element_stack: ["HTML", "CSS", "React JS", "Netlify"],
             // MID
-            project_img: require("../assets/project/pic3.png"),
-            btn_link: "https://github.com/Ryjekk/Inuk-Website",
-            btn_link2: "https://inuk.netlify.app/",
+            project_img: require("../assets/project/pic0.png"),
+            btn_link: "https://github.com/Ryjekk/Sort_algorytms",
+            btn_link2: "#",
             // BOT
             content_left:
-              "As the main purpose of this project was to improve my comprehension of SASS like also to build a page where I can show my projects. ",
+              "Sort Algorithms was a project pulled just after starting my journey with React JS. Goal of this project was to try build real life aplication using React JS freamework as a main tool",
             content_midd:
-              "For this project I used Vanila Javascript, HTML and CSS, just to fell more sure of way of using it, like also to imprve my skill in usinf Flexbox and CSS Grids. I hosted it through Netlify, because its easy, free and how I've hosted many of my projects.",
+              "React JS is perfeect choose for this type of SPA aplication. I used it just to try my skills of it after some short time of learning it. Of cousre this aplication could be written in more then React. As a natural choose I could use P5.js libary to make draving on canvas easier",
             content_right:
-              "Main problems is taht this webside is ujisng plain simple HTML. Because of that I decidet to build more complex website."
+              "For the future improvments we could count to applying React Hooks, implementing better visualisation or even expanding amount of sort algorithms"
           }
         ]
       }

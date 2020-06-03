@@ -83,7 +83,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      projectLink: "/project",
+      projectLink: "/projectAlgo",
       content: {
         home: [
           {
@@ -160,11 +160,13 @@ export default {
       } else if (id === 2) {
         return (this.projectLink = "/projectWeather");
       } else if (id === 3) {
-        return (this.projectLink = "/projectTattoo");
+        return (this.projectLink = "/project");
       } else if (id === 4) {
+        return (this.projectLink = "/projectTattoo");
+      } else if (id === 5) {
         return (this.projectLink = "/projectStokkur");
       } else {
-        return (this.projectLink = "/project");
+        return (this.projectLink = "/projectAlgo");
       }
     }
   },

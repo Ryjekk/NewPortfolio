@@ -46,6 +46,10 @@ export default {
         {
           id: "4",
           url: require("../assets/project/pic4.png")
+        },
+        {
+          id: "5",
+          url: require("../assets/project/pic5.png")
         }
       ],
       choseImage: 0
@@ -53,7 +57,7 @@ export default {
   },
   methods: {
     nextImage() {
-      this.choseImage < 4
+      this.choseImage < 5
         ? (this.choseImage = this.choseImage + 1)
         : (this.choseImage = 0);
 
@@ -63,7 +67,7 @@ export default {
       if (this.choseImage > 0) {
         this.choseImage = this.choseImage - 1;
       } else {
-        this.choseImage = 4;
+        this.choseImage = 5;
       }
 
       this.$emit("getImgId", this.choseImage);
