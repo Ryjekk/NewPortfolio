@@ -48,12 +48,12 @@ export default {
             info_element_code:
               '<a href="https://github.com/Ryjekk/Sort_algorytms"><strong>Repository</strong></a>',
             info_element_live:
-              '<a href="https://inuk.netlify.app/"><strong>View website TO DO !!!</strong></a>',
+              '<a href="https://sort-algo.netlify.app/"><strong>View website</strong></a>',
             info_element_stack: ["HTML", "CSS", "React JS", "Netlify"],
             // MID
             project_img: require("../assets/project/pic0.png"),
             btn_link: "https://github.com/Ryjekk/Sort_algorytms",
-            btn_link2: "#",
+            btn_link2: "https://sort-algo.netlify.app/",
             // BOT
             content_left:
               "Sort Algorithms was a project pulled just after starting my journey with React JS. Goal of this project was to try build real life aplication using React JS freamework as a main tool",
