@@ -3,4 +3,6 @@
 ```
 Updated Personal Portfolio  
 ```
-![image](https://user-images.githubusercontent.com/Ryjekk/NewPortfolio/master/appPic.png)
+![image](https://user-images.githubusercontent.com/Ryjekk/NewPortfolio/appPic.png)
+
+appPic.png
